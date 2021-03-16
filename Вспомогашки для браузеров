@@ -1,0 +1,31 @@
+// (IE, EDGE) скрывает скроллбар там, где он не нужен
+###########################################################
+-ms-overflow-style: -ms-autohiding-scrollbar;
+###########################################################
+
+// (all) скрывает крестик поля там, где он не нужен
+#################################################################
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	display: none;
+}
+#################################################################
+
+
+// Все для переноса текста, строк и д.р.
+#############################################################
+word-break: break-all;
+word-break: break-word;
+word-break: keep-all;
+overflow-wrap: break-word;
+hyphens: manual;
+hyphens: auto;
+line-break: loose;
+line-break: strict;
+line-break: anywhere;
+text-wrap: balance;
+#############################################################
